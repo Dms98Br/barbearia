@@ -1,4 +1,7 @@
-
+body {
+    background: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .produtos {
     width: 940px;
@@ -29,21 +32,47 @@
     border-color: #088C19;
 }
 
-.produtos li:hover h2{
+.produtos li:hover h2 {
     font-size: 34px;
 }
 
-.produtos h2{
+.produtos h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-.produto-descricao{
-    font-size: 18px;    
+.produto-descricao {
+    font-size: 18px;
 }
 
-.produto-preco{
+.produto-preco {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    .produtos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .produtos li {        
+        width: 80%;        
+        margin: 1em 0;
+        
+        vertical-align: baseline;        
+        padding: 30px 20px;
+    }
+
+    .caixa {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
 }

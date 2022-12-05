@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
     <title>Home - Barbearia</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
@@ -26,9 +30,10 @@
     </header>
 
     <main>
-        <img id='banner' src="image/banner.jpg">
-        <div class="principal">
-            <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+        <img class='banner' src="image/banner.jpg">
+        <section class="principal">
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+            <img class="utensilios" src="image/utensilios.jpg" alt="Utensilios de barbeiro" />
             <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor
                 para o
                 seu
@@ -41,17 +46,37 @@
             <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
                 padrão de
                 excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-        </div>
-        <div class="beneficios">
-            <h3 class="titulo-centralizado">Benefícios</h3>
-            <ul id="beneficios-itens" class="beneficios-itens">
-                <li class="itens">Atendimento aos clientes</li>
-                <li class="itens">Espaços diferenciados</li>
-                <li class="itens">Localização</li>
-                <li class="itens">Professionais qualificados</li>
-            </ul>
-            <img id="beneficios" class="beneficiosimage" src="image/beneficios.jpg" />
-        </div>
+        </section>
+
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado na cidade de Marília-SP.</p>
+            <div class="mapa-conteudo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.4495810239127!2d-49.914618294497124!3d-22.2230147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd099a3fd25b7%3A0x2c7783d0bb149968!2sResidencial%20Reserva%20Esmeralda!5e0!3m2!1spt-BR!2sbr!4v1670203842184!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="beneficios">
+            <h3 class="titulo-principal">Benefícios</h3>
+            <div class="conteudo-beneficios">
+                <ul id="beneficios-itens" class="beneficios-itens">
+                    <li class="itens">Atendimento aos clientes</li>
+                    <li class="itens">Espaços diferenciados</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Professionais qualificados</li>
+                    <li class="itens">Pontualidade</li>
+                    <li class="itens">Limpeza</li>
+                </ul><img id="beneficios" class="beneficiosimage" src="image/beneficios.jpg" />
+            </div>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
 
     <footer>
